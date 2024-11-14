@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Boxes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="box" id="box1">
+        <p>Box 1</p>
+        <div class="options" id="options1">
+            <label for="color1">Color:</label>
+            <select id="color1" onchange="changeColor('box1')">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+                <option value="purple">Purple</option>
+            </select>
+            <br>
+            <label for="size1">Size:</label>
+            <select id="size1" onchange="changeSize('box1')">
+                <option value="200px">Medium</option>
+                <option value="300px">Large</option>
+                <option value="400px">Extra Large</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="box" id="box2">
+        <p>Box 2</p>
+        <div class="options" id="options2">
+            <label for="color2">Color:</label>
+            <select id="color2" onchange="changeColor('box2')">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+            </select>
+            <br>
+            <label for="size2">Size:</label>
+            <select id="size2" onchange="changeSize('box2')">
+                <option value="200px">Medium</option>
+                <option value="300px">Large</option>
+                <option value="400px">Extra Large</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="box" id="box3">
+        <p>Box 3</p>
+        <div class="options" id="options3">
+            <label for="color3">Color:</label>
+            <select id="color3" onchange="changeColor('box3')">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="cyan">Cyan</option>
+                <option value="magenta">Magenta</option>
+            </select>
+            <br>
+            <label for="size3">Size:</label>
+            <select id="size3" onchange="changeSize('box3')">
+                <option value="200px">Medium</option>
+                <option value="300px">Large</option>
+                <option value="400px">Extra Large</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
